@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TechFix | Manutenção de computadores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>.cover{display:none}body.cover-open{overflow:auto}</style></noscript>
+</head>
+<body class="cover-open">
+<div class="cover" id="capa">
+  <img src="img/capa.jpg" alt="Capa: Seu computador, funcionando de novo.">
+  <button class="go" id="entrar" type="button">Conhecer mais</button>
+</div>
+<div id="site">
+
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="#">TechFix<span>.</span></a>
+    <nav aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#como">Como funciona</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn" href="#contato">Pedir orçamento</a>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1>Seu computador de volta ao ritmo, sem dor de cabeça.</h1>
+        <p class="lead">A TechFix faz manutenção, limpeza e upgrade de notebooks e desktops para casas e empresas. Diagnóstico claro, preço combinado antes e prazo que a gente cumpre.</p>
+        <div class="actions">
+          <a class="btn" href="#contato">Falar com a TechFix</a>
+          <a class="btn alt" href="#servicos">Ver serviços</a>
+        </div>
+      </div>
+      <aside class="diag" aria-label="Exemplo de diagnóstico">
+        <h3>Diagnóstico TechFix <small>exemplo</small></h3>
+        <ul>
+          <li><span>Disco e memória</span><b>Saudável</b></li>
+          <li><span>Temperatura do processador</span><b>Normal</b></li>
+          <li><span>Vírus e malware</span><b>Limpo</b></li>
+          <li class="warn"><span>Ventoinha e pasta térmica</span><b>Trocar</b></li>
+          <li><span>Sistema e drivers</span><b>Atualizado</b></li>
+        </ul>
+        <div class="bar" aria-hidden="true"><i></i></div>
+      </aside>
+    </div>
+  </main>
+</div>
+
+<section id="servicos">
+  <div class="wrap">
+    <h2>O que a TechFix resolve</h2>
+    <p class="sub">Do computador que não liga ao que só está lento. Você diz o sintoma, a gente encontra a causa.</p>
+    <div class="grid">
+      <div class="item"><h3>Manutenção preventiva</h3><p>Limpeza interna, troca de pasta térmica e revisão geral para evitar travamentos e superaquecimento.</p></div>
+      <div class="item"><h3>Conserto de hardware</h3><p>Troca de tela, teclado, bateria, fonte, placa e conectores em notebooks e desktops.</p></div>
+      <div class="item"><h3>Upgrade de SSD e memória</h3><p>Deixe uma máquina antiga rápida de novo com SSD e mais RAM, sem precisar comprar outra.</p></div>
+      <div class="item"><h3>Formatação e sistema</h3><p>Instalação de Windows ou Linux, drivers e programas, com backup dos seus arquivos.</p></div>
+      <div class="item"><h3>Remoção de vírus</h3><p>Limpeza de malware, adwares e programas indesejados, com configuração de proteção.</p></div>
+      <div class="item"><h3>Suporte para empresas</h3><p>Manutenção periódica do parque de computadores do seu escritório, com contrato mensal.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="como">
+  <div class="wrap">
+    <h2>Como funciona o atendimento</h2>
+    <ol class="steps">
+      <li><h3>Você conta o problema</h3><p>Por formulário ou WhatsApp, em poucas linhas.</p></li>
+      <li><h3>Diagnóstico</h3><p>Testamos a máquina e explicamos o que foi encontrado.</p></li>
+      <li><h3>Orçamento aprovado</h3><p>Valor e prazo combinados antes de qualquer reparo.</p></li>
+      <li><h3>Entrega e garantia</h3><p>Você recebe o computador testado, com garantia do serviço.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap contact">
+    <div>
+      <h2>Peça seu orçamento</h2>
+      <p class="sub">Responderemos no mesmo dia útil.</p>
+      <dl>
+        <dt>WhatsApp</dt><dd>(11) 90000-0000</dd>
+        <dt>E-mail</dt><dd>contato@techfix.com.br</dd>
+        <dt>Horário</dt><dd>Segunda a sexta, das 9h às 18h</dd>
+      </dl>
+    </div>
+    <form id="f">
+      <label>Nome<input name="nome" required autocomplete="name"></label>
+      <label>Telefone ou e-mail<input name="contato" required></label>
+      <label>Tipo de equipamento
+        <select name="tipo"><option>Notebook</option><option>Desktop</option><option>Vários computadores (empresa)</option></select>
+      </label>
+      <label>O que está acontecendo?<textarea name="msg" required></textarea></label>
+      <button class="btn" type="submit">Enviar pedido</button>
+      <p class="ok" id="ok" role="status">Pedido enviado. A TechFix entra em contato em breve.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 TechFix. Manutenção de computadores.</span>
+    <span>contato@techfix.com.br</span>
+  </div>
+</footer>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
